@@ -1,1 +1,1 @@
-web: gunicorn application:vaccines
+web: gunicorn app:vaccines
