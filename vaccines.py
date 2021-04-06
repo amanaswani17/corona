@@ -52,6 +52,7 @@ covid_data_list = covid_data[['Country/Region', 'Lat', 'Long']]
 dict_of_locations = covid_data_list.set_index('Country/Region')[['Lat', 'Long']].T.to_dict('dict')
 
 app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}])
+server = app.server
 
 app.layout = html.Div([
     html.Div([
