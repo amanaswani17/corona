@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT app:vaccines
+web: gunicorn app:vaccines.py
