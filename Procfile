@@ -1,1 +1,1 @@
-web: gunicorn app:vaccines.py
+web: gunicorn vaccines:server
